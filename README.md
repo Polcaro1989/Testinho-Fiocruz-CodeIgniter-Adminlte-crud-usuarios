@@ -150,7 +150,7 @@ sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}
 - Entre na pasta do repositório
 - Execute o`docker-compose up` command
   - se você quiser executar em segundo plano, execute o comando `docker-compose up -d`
-- Acesse o endereço `http://localhost:8080` to access phpmyadmin
+- Acesse o endereço `http://localhost:9092` to access phpmyadmin
   - acesso do usuário
     - user: mysql
     - password: mysql
@@ -159,10 +159,7 @@ sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}
     - user: root
     - password: root
     - host: mysql
-- Acesse o endereço `http://localhost:8081` para acessar o pgadmin
-  - user: admin@localhost.com
-  - password: admin
-- Acesse o endereço `http://localhost` para acessar o projeto
+- Acesse o endereço `http://localhost:8006` para acessar o projeto
 
 ## Dados persistentes:
 
@@ -303,18 +300,3 @@ xdebug.cli_color=1
   Xdebug
   Zend OPcache
 ```
-
-## Comentários:
-
-O projeto inicia os serviços de `nginx`, `php`, `mysql`, `postgresql`, `phpmyadmin`, `pgadmin`
-e `redis` por padrão, se você quiser usar `apache2`, `mariadb` você precisa comentar os serviços
-que estão sendo usados ​​e habilitar os serviços que você quer usar no
-arquivo `docker-compose.yml`.
-
-
-
-
-```
-sudo apt-get install composer
-```
-
