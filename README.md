@@ -1,21 +1,28 @@
 # Sistema Codeigniter em container Docker.  
+
+CRÉDITOS AO AUTOR DO Testinho:  
+https://github.com/abraao69  
+  
+  
+O servidor está configurado com muitos complementos, sendo grande parte deles necessários para o pleno funcionamento.  
+Obs: Esse projeto é bom para personalizar outros projetos web também. 
   
 <img src="https://github.com/abraao69/abraao69/blob/main/Navy%20Blue%20Geometric%20Technology%20LinkedIn%20Banner%20(2).png" alt="Logo">
 
 <div style="display: flex; align-items: center;">
-  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz1.jpg?raw=true" alt="Logo" width="1100px" height="400">
+  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz1.jpg?raw=true" alt="Logo">
   <br><br>
 </div>
 <div style="display: flex; align-items: center;">
-  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz2.jpg?raw=true" alt="Logo" width="1100px" height="400px">
+  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz2.jpg?raw=true" alt="Logo">
   <br><br>
 </div>
 <div style="display: flex; align-items: center;">
-  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz3.jpg?raw=true" alt="Logo" width="1100px" height="400px">
+  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz3.jpg?raw=true" alt="Logo">
   <br><br>
 </div>
 <div style="display: flex; align-items: center;">
-  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz4.jpg?raw=true" alt="Logo" width="1100px" height="400px">
+  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz4.jpg?raw=true" alt="Logo">
   <br><br>
 </div>
   
