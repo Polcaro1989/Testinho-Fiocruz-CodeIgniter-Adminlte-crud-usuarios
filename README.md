@@ -1,4 +1,4 @@
-# Sistema Codeinigther em container Docker.  
+# Sistema Codeigniter em container Docker.  
   
 <div style="display: flex; align-items: center;">
   <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/logo.png" alt="Logo" width="200" height="100">
