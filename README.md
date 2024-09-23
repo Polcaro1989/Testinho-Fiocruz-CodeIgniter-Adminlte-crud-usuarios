@@ -26,13 +26,6 @@ Obs: Esse projeto é bom para personalizar outros projetos web também.
   <br><br>
 </div>
   
-CRÉDITOS AO AUTOR DO Testinho CMS  Bootstrap+Wordpress:  
-https://github.com/abraao69  
-  
-  
-O servidor está configurado com muitos complementos, sendo grande parte deles necessários para o pleno funcionamento.  
-Obs: Esse projeto é bom para personalizar outros projetos web também.  
-  
 ## Comandos para pleno funcionamento do sistema:
 Iniciar:  
 ```
