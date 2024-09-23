@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+
+    <!-- AdminLTE CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
+    
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Bootstrap CSS (se necessário) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+
+    <div class="wrapper">
+        <!-- Conteúdo principal -->
+        <div class="content-wrapper p-4">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="col-10 text-right mb-3">
+                        <!-- Botão Cadastrar -->
+                        <button class="btn btn-success" id="btnCadastrar">Cadastrar</button>
+                    </div>
+                    
+                    <div class="card w-75 mx-auto">
+                        <div class="card-header">
+                            <h3 class="card-title">Cadastro de Usuários</h3>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Email</th>
+                                        <th>Perfil</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>João</td>
+                                        <td>email@email.com.br</td>
+                                        <td>Convidado</td>
+                                        <td>
+                                            <button class="btn btn-info btn-sm" onclick="editarUsuario('João')">
+                                                <i class="fas fa-edit"></i> Editar
+                                            </button>
+                                            <button class="btn btn-danger btn-sm" onclick="abrirModalExclusao('João')">
+                                                <i class="fas fa-trash"></i> Deletar
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria</td>
+                                        <td>email@email.com.br</td>
+                                        <td>Administrador</td>
+                                        <td>
+                                            <button class="btn btn-info btn-sm" onclick="editarUsuario('Maria')">
+                                                <i class="fas fa-edit"></i> Editar
+                                            </button>
+                                            <button class="btn btn-danger btn-sm" onclick="abrirModalExclusao('Maria')">
+                                                <i class="fas fa-trash"></i> Deletar
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>José</td>
+                                        <td>email@email.com.br</td>
+                                        <td>Administrador</td>
+                                        <td>
+                                            <button class="btn btn-info btn-sm" onclick="editarUsuario('José')">
+                                                <i class="fas fa-edit"></i> Editar
+                                            </button>
+                                            <button class="btn btn-danger btn-sm" onclick="abrirModalExclusao('José')">
+                                                <i class="fas fa-trash"></i> Deletar
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal fade" id="modalExclusao" tabindex="-1" aria-labelledby="modalExclusaoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalExclusaoLabel">Confirmação</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Deseja realmente excluir o usuário <strong id="nomeUsuario"></strong>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-primary" id="btnConfirmarExclusao">Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (se necessário) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AdminLTE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+
+    <!-- Funções de Editar e Deletar -->
+    <script>
+        let usuarioParaExcluir = '';
+
+        function editarUsuario(nome) {
+            // Redireciona para project-edit.html
+            window.location.href = 'project-edit.html';
+        }
+
+        function abrirModalExclusao(nome) {
+            usuarioParaExcluir = nome;
+            document.getElementById('nomeUsuario').textContent = nome;
+            $('#modalExclusao').modal('show');
+        }
+
+        document.getElementById('btnConfirmarExclusao').addEventListener('click', function() {
+            deletarUsuario(usuarioParaExcluir);
+        });
+
+        function deletarUsuario(nome) {
+            // Lógica de exclusão do usuário
+            alert('Usuário ' + nome + ' deletado com sucesso!');
+            $('#modalExclusao').modal('hide');
+        }
+
+        // Função para redirecionar para a página de cadastro
+        document.getElementById('btnCadastrar').addEventListener('click', function() {
+            window.location.href = 'project-add.html';
+        });
+    </script>
+
+</body>
+</html>
