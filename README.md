@@ -26,7 +26,7 @@ Obs: Esse projeto é bom para personalizar outros projetos web também.
   <br><br>
 </div>
 
-### Instalação de algumas dependências
+### Instalação do sistema.
 ```
 sudo apt-get install \
     apt-transport-https \
