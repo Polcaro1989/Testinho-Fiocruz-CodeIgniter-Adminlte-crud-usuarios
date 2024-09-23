@@ -25,33 +25,7 @@ Obs: Esse projeto é bom para personalizar outros projetos web também.
   <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz4.jpg?raw=true" alt="Logo">
   <br><br>
 </div>
-  
-## Comandos para pleno funcionamento do sistema:
-Iniciar:  
-```
-sudo docker-compose up -d  
-```
-Parar:
-```
-sudo docker-compose down  
-```
-Remover instalação atual do wordpres e adicionar uma limpa:
-```
-docker-compose down -v
-```
-Fazer o build dos containers analizando a construção:  
-```
-docker-compose up --build  
-```
-Entrar dentro do container:
-```
-docker exec -it 88e18972e19a /bin/bash
-```
-descobrir ip do container:
-```
-docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container-wordpress-3-wordpress-1
-```  
-  
+
 ### Instalação de algumas dependências
 ```
 sudo apt-get install \
@@ -142,6 +116,34 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff0319065
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
+
+## Comandos para rodar o sistema:
+
+Iniciar:  
+```
+sudo docker-compose up -d  
+```
+Parar:
+```
+sudo docker-compose down  
+```
+Remover instalação atual do wordpres e adicionar uma limpa:
+```
+sudo docker-compose down -v
+```
+Fazer o build dos containers analizando a construção:  
+```
+sudo docker-compose up --build  
+```
+Entrar dentro do container:
+```
+sudo docker exec -it 88e18972e19a /bin/bash
+```
+descobrir ip do container:
+```
+sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container-wordpress-3-wordpress-1
+```  
+
 
 # Docker com PHP 8.3.4
 
