@@ -129,6 +129,175 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 
+# Docker com PHP 8.3.4
+
+Este repositório tem como objetivo facilitar a criação de um ambiente de desenvolvimento com php 8.3.4
+
+## O que tem no ambiente:
+
+- [Nginx](https://www.nginx.com/)
+- [PhpFpm](https://php.net/)
+- [Apache2](https://httpd.apache.org/)
+- [MySQL](https://www.mysql.com/)
+- [MariaDB](https://mariadb.com/)
+- [PhpMyAdmin](https://www.phpmyadmin.net/)
+- [PgAdmin](https://www.pgadmin.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Redis](https://redis.io/)
+
+## Pré-requisitos:
+
+- [Install Docker](https://docs.docker.com/install/)
+- [Install Docker Compose](https://docs.docker.com/compose/install/)
+
+## Como usar:
+
+- Clonar o repositório
+- Entre na pasta do repositório
+- Execute o`docker-compose up` command
+  - se você quiser executar em segundo plano, execute o comando `docker-compose up -d`
+- Acesse o endereço `http://localhost:8080` to access phpmyadmin
+  - acesso do usuário
+    - user: mysql
+    - password: mysql
+    - host: mysql
+  - root acesso
+    - user: root
+    - password: root
+    - host: mysql
+- Acesse o endereço `http://localhost:8081` para acessar o pgadmin
+  - user: admin@localhost.com
+  - password: admin
+- Acesse o endereço `http://localhost` para acessar o projeto
+
+## Dados persistentes:
+
+- mysql data: `./docker/mysql/dbdata`
+- postgresql data: `./docker/postgresql/dbdata`
+- redis data: `./docker/redis`
+
+## PHP INI Config:
+A configuração local do php.ini está localizada em`./docker/php/php.ini` file.
+
+```ini
+[PHP]
+log_errors=On
+xmlrpc_errors=On
+html_errors=On
+display_errors=On
+display_startup_errors=On
+report_memleaks=On
+error_reporting=E_ALL
+file_uploads=On
+max_execution_time=120
+max_input_time=120
+session.gc_maxlifetime=1440
+post_max_size=50M
+upload_max_filesize=45M
+max_file_uploads=20
+variables_order="EGPCS"
+max_input_vars=10000
+max_input_nesting_level=64
+date.timezone=UTC
+memory_limit=512M
+expose_php=On
+
+[opcache]
+opcache.enable=true
+opcache.enable_cli=true
+opcache.jit=tracing
+
+[intl]
+intl.default_locale=en_utf8
+
+[xdebug]
+xdebug.client_host=host.docker.internal
+xdebug.client_port=9003
+xdebug.discover_client_host=0
+xdebug.start_with_request=yes
+xdebug.remote_handler=dbgp
+xdebug.idekey=PHPSTORM
+xdebug.mode=debug,develop
+xdebug.cli_color=1
+```
+
+## Módulos PHP:
+```
+[PHP Modules]
+  apcu
+  bcmath
+  Core
+  ctype
+  curl
+  date
+  dom
+  exif
+  fileinfo
+  filter
+  gd
+  gmp
+  hash
+  iconv
+  imap
+  intl
+  json
+  libxml
+  mbstring
+  mongodb
+  mysqli
+  mysqlnd
+  openssl
+  pcntl
+  pcre
+  PDO
+  pdo_mysql
+  pdo_pgsql
+  pdo_sqlite
+  pgsql
+  Phar
+  posix
+  random
+  readline
+  redis
+  Reflection
+  session
+  SimpleXML
+  soap
+  sockets
+  sodium
+  SPL
+  sqlite3
+  ssh2
+  standard
+  sysvmsg
+  sysvsem
+  sysvshm
+  tokenizer
+  xdebug
+  xml
+  xmlreader
+  xmlwriter
+  xsl
+  yaml
+  Zend OPcache
+  zip
+  zlib
+
+[Zend Modules]
+  Xdebug
+  Zend OPcache
+```
+
+## Comentários:
+
+O projeto inicia os serviços de `nginx`, `php`, `mysql`, `postgresql`, `phpmyadmin`, `pgadmin`
+e `redis` por padrão, se você quiser usar `apache2`, `mariadb` você precisa comentar os serviços
+que estão sendo usados ​​e habilitar os serviços que você quer usar no
+arquivo `docker-compose.yml`.
+
+
+
+
 ```
 sudo apt-get install composer
 ```
