@@ -12,6 +12,14 @@
   <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz2.jpg?raw=true" alt="Logo" width="1100px" height="400px">
   <br><br>
 </div>
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz3.jpg?raw=true" alt="Logo" width="1100px" height="400px">
+  <br><br>
+</div>
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz4.jpg?raw=true" alt="Logo" width="1100px" height="400px">
+  <br><br>
+</div>
   
 CRÉDITOS AO AUTOR DO Testinho CMS  Bootstrap+Wordpress:  
 https://github.com/abraao69  
