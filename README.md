@@ -1,9 +1,7 @@
 # Sistema Codeigniter em container Docker.  
   
-<div style="display: flex; align-items: center;">
-  <img src="https://github.com/abraao69/abraao69/blob/main/Navy%20Blue%20Geometric%20Technology%20LinkedIn%20Banner%20(2).png" alt="Logo" width="1100" height="400px">
-  <br><br>
-</div>
+<img src="https://github.com/abraao69/abraao69/blob/main/Navy%20Blue%20Geometric%20Technology%20LinkedIn%20Banner%20(2).png" alt="Logo" width="900px" height="350px">
+
 <div style="display: flex; align-items: center;">
   <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz1.jpg?raw=true" alt="Logo" width="1100px" height="400">
   <br><br>
