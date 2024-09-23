@@ -142,31 +142,9 @@ sudo docker exec -it 88e18972e19a /bin/bash
 descobrir ip do container:
 ```
 sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container-wordpress-3-wordpress-1
-```  
+```
 
-
-# Docker com PHP 8.3.4
-
-Este repositório tem como objetivo facilitar a criação de um ambiente de desenvolvimento com php 8.3.4
-
-## O que tem no ambiente:
-
-- [Nginx](https://www.nginx.com/)
-- [PhpFpm](https://php.net/)
-- [Apache2](https://httpd.apache.org/)
-- [MySQL](https://www.mysql.com/)
-- [MariaDB](https://mariadb.com/)
-- [PhpMyAdmin](https://www.phpmyadmin.net/)
-- [PgAdmin](https://www.pgadmin.org/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Redis](https://redis.io/)
-
-## Pré-requisitos:
-
-- [Install Docker](https://docs.docker.com/install/)
-- [Install Docker Compose](https://docs.docker.com/compose/install/)
-
-## Como usar:
+## Como acessar:
 
 - Clonar o repositório
 - Entre na pasta do repositório
@@ -191,6 +169,28 @@ Este repositório tem como objetivo facilitar a criação de um ambiente de dese
 - mysql data: `./docker/mysql/dbdata`
 - postgresql data: `./docker/postgresql/dbdata`
 - redis data: `./docker/redis`
+
+
+# Docker com PHP 8.3.4
+
+Este repositório tem como objetivo facilitar a criação de um ambiente de desenvolvimento com php 8.3.4
+
+## O que tem no ambiente:
+
+- [Nginx](https://www.nginx.com/)
+- [PhpFpm](https://php.net/)
+- [Apache2](https://httpd.apache.org/)
+- [MySQL](https://www.mysql.com/)
+- [MariaDB](https://mariadb.com/)
+- [PhpMyAdmin](https://www.phpmyadmin.net/)
+- [PgAdmin](https://www.pgadmin.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Redis](https://redis.io/)
+
+## Pré-requisitos:
+
+- [Install Docker](https://docs.docker.com/install/)
+- [Install Docker Compose](https://docs.docker.com/compose/install/)
 
 ## PHP INI Config:
 A configuração local do php.ini está localizada em`./docker/php/php.ini` file.
