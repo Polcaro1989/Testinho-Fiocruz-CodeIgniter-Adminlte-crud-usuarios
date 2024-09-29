@@ -8,6 +8,7 @@ O servidor está configurado com muitos complementos, sendo grande parte deles n
 Obs: Esse projeto é bom para personalizar outros projetos web também. 
   
 <img src="https://github.com/abraao69/abraao69/blob/main/Navy%20Blue%20Geometric%20Technology%20LinkedIn%20Banner%20(2).png" alt="Logo">
+<img src="https://tse1.mm.bing.net/th?id=OIP.yv0UeJdij0kDxwbDsz9rgQHaC0&pid=Api&P=0&h=180" alt="Logo">
 
 <div style="display: flex; align-items: center;">
   <img src="https://github.com/abraao69/Setup-Docker-PHP-7.4/blob/master/fiocruz1.jpg?raw=true" alt="Logo">
