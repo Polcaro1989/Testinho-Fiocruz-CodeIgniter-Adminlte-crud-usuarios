@@ -1,6 +1,7 @@
 # Sistema CodeIgniter com container Docker.  
 
-CRÉDITOS AO AUTOR DO Testinho:  
+Créditos ao testinho:  
+<br><br>
 Abraão Polcaro 
   
   
@@ -27,7 +28,7 @@ Obs: Esse projeto é bom para personalizar outros projetos web também.
   <br><br>
 </div>
 
-### Instalação do sistema.
+### Instalação do sistema:
 ```
 sudo apt-get install \
     apt-transport-https \
@@ -37,7 +38,7 @@ sudo apt-get install \
     lsb-release
 ```
   
-### Instalação do Docker
+### Instalação do Docker:
 Para instalação no linux mint segue a url:
 https://linuxiac.com/how-to-install-docker-on-linux-mint-21/
 
@@ -83,11 +84,11 @@ docker-compose --version
 ```
   
 ##
-### Para usar o Docker sem usar sudo
+### Para usar o Docker sem usar sudo:
 https://docs.docker.com/engine/install/linux-postinstall/
   
 ##  
-### Configurar para o fuso horário de São Paulo
+### Configurar para o fuso horário de São Paulo:
 ```
 sudo timedatectl set-timezone America/Sao_Paulo
 ```
@@ -99,13 +100,13 @@ sudo add-apt-repository ppa:ondrej/php
 ```
 
 ##
-### Instalar os pacotes do PHP instalado. Verificar com php version.
+### Instalar os pacotes do PHP instalado. Verificar com php version:
 ```
 sudo apt-get install -y php8.2-cli php8.2-common php8.2-pgsql php8.2-zip php8.2-gd php8.2-mbstring php8.2-curl php8.2-xml php8.2-bcmath
 ```
 
 ##
-### Install Composer
+### Install Composer:
 
 ```
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
@@ -169,7 +170,7 @@ sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}
 - redis data: `./docker/redis`
 
 
-# Docker com PHP 8.3.4
+# Docker com PHP 8.3.4:
 
 Este repositório tem como objetivo facilitar a criação de um ambiente de desenvolvimento com php 8.3.4
 
