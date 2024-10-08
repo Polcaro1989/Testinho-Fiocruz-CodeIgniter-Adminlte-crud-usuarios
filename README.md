@@ -2,7 +2,7 @@
 
 Créditos ao testinho:  
 <br><br>
-Abraão Polcaro 
+Abraão Polcaro.
   
   
 O servidor está configurado com muitos complementos, sendo grande parte deles necessários para o pleno funcionamento.  
