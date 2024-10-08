@@ -1,7 +1,7 @@
-# Sistema Codeigniter em container Docker.  
+# Sistema CodeIgniter com container Docker.  
 
 CRÉDITOS AO AUTOR DO Testinho:  
-https://github.com/abraao69  
+Abraão Polcaro 
   
   
 O servidor está configurado com muitos complementos, sendo grande parte deles necessários para o pleno funcionamento.  
